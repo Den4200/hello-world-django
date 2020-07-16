@@ -16,3 +16,13 @@ jobs:
           buildContext: '.'
           tags: 'latest'
  
+  - deployment: deployment
+    displayName: 'Deploy to Production'
+    environment:
+      name: 'production'
+      resourceType: 'VirtualMachine'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - script: 'docker-compose up --build -d'
