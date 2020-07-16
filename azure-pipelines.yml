@@ -25,4 +25,5 @@ jobs:
       runOnce:
         deploy:
           steps:
-            - script: 'docker-compose up --build -d'
+            - script: './deploy.sh'
+              workingDirectory: '~/code/hello-world-django/'
