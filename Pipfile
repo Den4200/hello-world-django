@@ -12,3 +12,9 @@ django = "*"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+lint = "python -m flake8"
+manage = "python manage.py"
+precommit = "pre-commit install"
+start = "python manage.py runserver"
