@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  uwsgi:
+    build:
+      context: .
+      dockerfile: scripts/Dockerfile
+    expose:
+      - 5000
+    environment:
+      DEBUG: ${DEBUG}
+      SECRET_KEY: ${SECRET_KEY}
+    restart: always
+    volumes:
+      - ./:/app/
