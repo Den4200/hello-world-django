@@ -4,11 +4,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-flake8 = "*"
-pre-commit = "*"
+flake8 = "~=3.8.3"
+pre-commit = "~=2.6.0"
 
 [packages]
-django = "*"
+django = "~=3.0.8"
 
 [requires]
 python_version = "3.8"
