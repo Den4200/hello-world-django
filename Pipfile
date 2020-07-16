@@ -9,6 +9,7 @@ pre-commit = "~=2.6.0"
 
 [packages]
 django = "~=3.0.8"
+django-environ = "*"
 
 [requires]
 python_version = "3.8"
