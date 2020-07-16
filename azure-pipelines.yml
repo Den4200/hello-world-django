@@ -15,15 +15,3 @@ jobs:
           Dockerfile: 'Dockerfile'
           buildContext: '.'
           tags: 'latest'
- 
-  - deployment: deployment
-    displayName: 'Deploy to Production'
-    environment:
-      name: 'production'
-      resourceType: 'VirtualMachine'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-            - script: './deploy.sh'
-              workingDirectory: '~/code/hello-world-django/'
