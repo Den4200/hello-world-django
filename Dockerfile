@@ -17,4 +17,4 @@ RUN pip install -U uwsgi
 RUN pip install -U 'pipenv==2018.11.26' && pipenv install --system --deploy
 
 ENTRYPOINT ["uwsgi"]
-CMD ["--ini", "scripts/uwsgi.ini"]
+CMD ["--ini", "uwsgi.ini"]

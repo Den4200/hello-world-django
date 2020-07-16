@@ -3,7 +3,7 @@ services:
   uwsgi:
     build:
       context: .
-      dockerfile: scripts/Dockerfile
+      dockerfile: Dockerfile
     expose:
       - 5000
     environment:
